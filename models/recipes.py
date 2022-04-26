@@ -49,7 +49,7 @@ def show_method_by_id(req, recipe_id):
         return_arr = []
 
         for r in recipes:
-            if r['name'] == recipe_id:
+            if r['id'] == recipe_id:
                 return_arr.append({'id': r['id'], 'name' : r['name'], 'method' : r['method']})
 
         return return_arr,200

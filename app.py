@@ -52,7 +52,7 @@ def recipe_method_handler(recipe_name):
 @app.route('/recipes/<int:recipe_id>/method', methods=['GET'])
 def recipe_methodid_handler(recipe_id):
     fns = {
-       'GET':recipes.show_method_by_name 
+       'GET':recipes.show_method_by_id 
     }
     resp, code = fns[request.method](request, recipe_id)
     return jsonify(resp), code
