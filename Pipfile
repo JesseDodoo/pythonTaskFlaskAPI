@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
+flask = {extras = ["async"], version = "*"}
 cors = "*"
 flask-cors = "*"
 werkzeug = "*"
+requests = "*"
 
 [dev-packages]
 
